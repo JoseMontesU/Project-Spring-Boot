@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  th:href="@{/CSS/style.css}" rel="stylesheet">
+    <link th:href="@{/CSS/bootstrap.min.css}" rel="stylesheet" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link  th:href="@{/CSS/navbar-top-fixed.css}" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fst-italic" href="#">MI PC LISTA</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Categorias</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Marcas</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" >Bienvenido: <span th:text="${username}"></span></a>
+          </li>          
+        </ul>
+        <form class="d-flex">          
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>          
+          <a class="btn btn-outline-light ms-1" th:href="@{/form}">Signin/Signup</a>         
+        </form>
+      </div>
+    </div>
+  </nav>
+    <div class="container">
+        <div class="inicio">
+            <div class="rounded float-lg-start col-lg-8 col-md-6"><a th:href="index.php"><img th:src="@{/pictures/elreal.png}" alt="" width="100%" height="auto"></a></div>
+            <div class="rounded float-lg-end col-lg-4 col-md-6"><a th:href="CAimpresoras.php"><img th:src="@{/pictures/zona-impresoras.jpg}" width="100%" height="auto" ></a></div>
+            <div class="rounded float-lg-end col-lg-4 col-md-6"><a th:href="CAaccesorios.php"><img th:src="@{/pictures/sonido.jpg}" width="100%" height="auto"></a></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="estandares">
+            <ul>
+                <li>
+                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                    <span>100% GARANTÍA</span><br>
+                    Productos originales
+                </li>
+                <li>
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                    <span>SOPORTE TÉCNICO</span><br>
+                    Presencial y Remoto
+                </li>
+                <li>
+                    
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>                   
+                    <span>PAGOS SEGUROS</span><br>
+                    100% Pago seguro 
+                    
+                </li>
+                <li>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <span>ENVIOS NACIONALES</span><br>
+                    Llegamos a todo el Perú
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- categirias -->
+    <div class="container">
+       <div class="categories">
+            <h5>Categorías</h5>
+            <h2>Explore nuestra gama de productos</h2>
+       </div> 
+       <div class="imagenes">
+        <a href="CAlaptops.php"><img th:src="@{/pictures/LAPTOPS.PNG}" height="210.16px" width="315.25" ></a>
+        <a href="CApcgamer.php"><img src="pictures/GAMER.png"  height="210.16px" width="315.25"></a>
+        <a href="CAcomputadora.php"><img src="pictures/OFICINA.png"  height="210.16px" width="315.25"></a>
+        <a href="CAcomputadora.php"><img src="pictures/INGE.png"  height="210.16px" width="315.25"></a>
+        <a href="CAtodoenuno.php"><img src="pictures/AIO.png"  height="210.16px" width="315.25" ></a>
+        <a href="CAimpresoras.php"><img src="pictures/IMPRESORA.png"  height="210.16px" width="315.25"></a>
+        <a href="CAaccesorios.php"><img src="pictures/ACCESORIOS.png"  height="210.16px" width="315.25"></a>
+        <a href="CApantallas.php"><img src="pictures/MONITOR.png"  height="210.16px" width="315.25"></a>
+       </div> 
+    </div>
+    <div class="container">
+        <!--mapa -->
+        <div class="map">
+          <ul>
+              <li>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.862984627877!2d-77.04084746471639!3d-12.052946891345968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c60c13cd15%3A0xecb320248f14a508!2sMI%20PC%20LISTA%20-%20(Tienda%20Principal)%20Alquiler%20y%20Venta%20de%20Computadoras%20y%20Laptops!5e0!3m2!1ses-419!2spe!4v1631897638931!5m2!1ses-419!2spe" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+              </li>  
+              <li class="map-right">
+                  <div class="hijo">
+                  <h2  class="gama">Tienda principal</h2> 
+                  <p>___________________________________________</p>
+                  <h1 id="gaa"> Av.WILSON 11440 SOTANO 1 "GALERIA 11" </h1>
+                  <P id="terna">Atención al cliente de Lunes a Sábado 9am a 6pm Domingo 10am a 3pm</P>
+                  <p id="chikicarreon">  CERCADO DE LIMA, PERÚ</p>
+                  
+                      <fieldset>
+                          <a href="#pcgamer">&#9742 WHATSAPP 954322171</a>
+                      </fieldset>
+  
+                      <fieldset >
+                          <a href="#pcgamer">&#9742 WHATSAPP 932254721</a>
+                      </fieldset>
+  
+                      <fieldset >
+                          <a href="#pcgamer"> &#9742 WHATSAPP 977543217</a>
+                      </fieldset>
+                  
+                      <fieldset > 
+                          <a href="#pcgamer">&#9742 WHATSAPP 982654723</a>
+                      </fieldset>
+  
+                      <fieldset >
+                          <a href="#pcgamer">&#9742 WHATSAPP 944729250  </a>
+                      </fieldset>
+                  
+                  </div> 
+              </li>
+          </ul>
+      </div>
+      </div>
+      <!-- pie de pagina -->
+      <footer class="container">
+          <div class="foo1">
+              <ul class="foo2">
+                  <li class="datos">
+                      <ul>
+                          <li><img src="pictures/logo.png">
+                              <h4>Av.Wilson 1140 Sótano 1</h4>
+                              <h4>Galería la Once</h4>
+                              <h4>Lima 15001</h4>
+                          </li>
+                          <li>
+                              <i class="fa fa-phone" aria-hidden="true"></i>
+                              <span>Cell:+51 967 073 019</span>
+                          </li>
+                          <li>
+                          <i class="fa fa-envelope" aria-hidden="true"></i>
+                              <span>VENTAS@MIPCLISTAPERU.Computadora</span>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="cate">
+                      <h2>Categorias</h2>
+                      <ul>
+                          <li>PC Gamer</li>
+                          <li>Computadoras</li>
+                          <li>PC all in one</li>
+                          <li>Laptops</li>
+                          <li>Monitores</li>
+                      </ul>
+                  </li>
+                  <li class="mas">
+                      <h2>Componentes</h2>
+                      <ul>
+                          <li>Impresoras</li>
+                          <li>Accesorios</li>
+                          <li>Terminos y Condiciones</li>
+                          <li>Politica de Garantía</li>
+                      </ul>
+                  </li>
+                  <li class="marca">
+                      <h2>Marcas</h2>
+                      <ul>
+                          <li>Behringer</li>
+                          <li>Yamaha</li>
+                          <li>JBL</li>
+                          <li>Shure</li>
+                          <li>Soundcraft</li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </footer>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>

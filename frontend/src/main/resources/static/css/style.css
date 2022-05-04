@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Poppins;
+}
+
+header{
+    float: left;
+    width: 100%;
+    letter-spacing: .3px
+}
+
+.tbh{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    float:left;
+    background: #f6f6f6;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+.toph{
+    width: 80%;
+    float: left;
+}
+.bottomh{
+    float: left;
+    width: 10%;
+    text-align: right;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.bottomh .icon{
+    font-size: 15px;
+}
+
+.second{
+    padding-top: 1.41575em;
+    padding-bottom: 1.41575em;
+    clear: both;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.second .logo ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1,1fr) 500px repeat(2,1fr);
+    justify-content:right;
+    align-items: center;
+
+}
+.second .logo ul li{
+    font-weight: 600;
+    text-align: center;
+    font-size: 24px;
+}
+.second .logo ul li a{
+    text-decoration: none;
+    color:#333;
+}
+.second .logo ul li .fa
+{
+    color:#F51300;
+    font-size: 25px;
+    width: 40px;
+}
+.ayuda{
+    clear: both;
+    background-color: #F51300;
+}
+.third {
+    list-style: none;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    width: 80%;
+    margin:0 auto;
+
+}
+.third li {
+    text-align: center;
+    font-weight: 500;
+}
+.third li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.third li a:hover {
+    color: #111;
+}
+
+/* inicio */
+.inicio{
+    width: 95%;
+    margin:0 auto;
+}
+.i1{
+    float: left;
+    margin-right: 22.55px;
+}
+.i2{
+    margin-bottom: 15.55px;
+}
+
+
+/* WILLIAM ALEXIS VELIZ CANCHOS estandares-----------------------------------------------------------------------------------*/
+.estandares ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 70px;
+}
+.estandares ul li span{
+    font-weight: 600;
+    letter-spacing: .3px
+}
+.estandares ul li i{
+    color: #F51300;
+    font-size: 18px;
+}
+/*productos ------------*/
+
+
+
+/* section */
+.container{
+    clear: both;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.categories{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+}
+h5{
+    color:gray;
+}
+.imagenes{
+    text-align: center;
+    padding: 10px;
+}
+/* map */
+.map ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.map-right{
+    text-align: center;
+}
+.hijo{
+    padding: 8% 0;
+    text-decoration: none;
+}
+fieldset{
+    border:2px solid #F51300;
+    color: #F51300;
+    width: 300px;
+    height: 30px;
+    line-height: 0px;
+    letter-spacing: 2;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+} 
+fieldset a{
+    text-decoration: none;
+    color:#F51300;
+}
+fieldset:hover {
+    background: #F51300; 
+}
+fieldset a:hover {
+    color: white;
+}
+#terna{
+    color: gray;
+    width: 450px;
+    margin:0 auto;
+    font-weight: 300;
+}
+#chikicarreon{
+    color: gray;
+    font-weight: 500;
+}
+
+/*footer*/
+.foo2{
+    display: grid;
+    grid-template-columns: 500px repeat(1,1fr) 310px repeat(1,1fr);
+    list-style: none;
+}
+.foo2 ul{
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.foo2 ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.datos{
+    margin-left: 80px;
+}
+h4{
+    font-weight: 400;
+}
+
+
+
+.productos ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 70px;
+}
